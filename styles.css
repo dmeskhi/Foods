@@ -14,7 +14,7 @@
     font-weight: 400;
 }
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 /*End of common styles*/
 
@@ -29,12 +29,20 @@ html {
     justify-content: space-evenly;
 }
 .section-heading {
-    font-size: 120px;
+    font-size: 12rem;
     font-weight: 900;
     color: #fff;
     text-align: center;
     text-transform: capitalize;
-    letter-spacing: 5px;
-    text-shadow: 2px 2px 2px #000;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+
+.section-1-icons i {
+    font-size: 35rem;
+    color: #ff4d94;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-shadow: 0.2rem 0.2rem 0.2rem #000;
 }
 /*End of Section One*/
