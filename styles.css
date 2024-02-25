@@ -26,5 +26,15 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+}
+.section-heading {
+    font-size: 120px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px #000;
 }
 /*End of Section One*/
