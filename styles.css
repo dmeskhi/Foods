@@ -77,6 +77,37 @@ html {
     justify-content: space-between;
     align-items: center;
     box-shadow: 1rem 1rem 1rem #000;
+    position: relative;
+    transform: rotateY(20deg)skewX(-2deg);
+    transition: transform 0.5s,box-shadow 0.5s;
+}
+.card:hover {
+    transform: rotateY(20deg)skewX(-2deg)translateY(-3rem);
+    box-shadow: 2rem 2rem 2rem #000;
+}
+.card::before {
+    content: "";
+    height: 1rem;
+    width: 100%;
+    background-color: #ec1b6f;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    transform:skewX(45deg);
+    transform-origin: bottom;
+    box-shadow: -0.1rem -0.1rem 0.1rem #000;
+}
+.card::after {
+    content: "";
+    height: 100%;
+    width: 1rem;
+    background-color: #ec1b6f;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform:skewY(45deg);
+    transform-origin: right;
+    box-shadow: -0.1rem -0.1rem 0.1rem #000;
 }
 .card-img {
     width: 100%;
@@ -99,5 +130,8 @@ html {
     letter-spacing: 0.2rem;
     text-transform: capitalize;
     border: none;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    box-shadow: -0,2rem -0.2rem 2rem #000;
 }
 /*End of section two*/
