@@ -1,3 +1,12 @@
+document.querySelector('.menu').addEventListener('click',
+() =>  {
+    document.querySelectorAll('.target').forEach((item) => {
+        item.classList.toggle('change')
+    })
+})
+
+
+
 //Slideshow. To switch between icons I had to add and remove class 'change'
 //to all the icons. 
 
